@@ -1,4 +1,0 @@
-services:
-#    news_news.example:
-#        class: News\NewsBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
