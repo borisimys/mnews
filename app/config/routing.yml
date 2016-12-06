@@ -1,0 +1,4 @@
+news_news:
+    resource: "@NewsNewsBundle/Controller/DefaultController.php"
+    type:     annotation
+
