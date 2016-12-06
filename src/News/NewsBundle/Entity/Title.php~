@@ -5,13 +5,12 @@ namespace News\NewsBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * News
+ * Title
  *
- * @ORM\Table(name="news")
- * @ORM\Entity
+ * @ORM\Table(name="Title")
+ * @ORM\Entity;
  */
-
-class News {
+class Title {
     /**
      * @ORM\Column(type="integer")
      * @ORM\Id
@@ -19,13 +18,12 @@ class News {
      */
     private $id;
     /**
-        *@ORM\Column(type="integer", length=6)
+     *@ORM\Column(type="text", length=200)
      */
-    private $id_title;
+    private $title_txt;
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="datetime")
      */
-    private $text_news;
-
-
+    private $updated;
 }
+

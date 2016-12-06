@@ -19,13 +19,14 @@ class News {
      */
     private $id;
     /**
-        *@ORM\Column(type="string", length=100)
+        *@ORM\Column(type="integer", length=6)
      */
-    private $sub_news;
+    private $id_title;
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string")
      */
     private $text_news;
+
 
 
     /**
@@ -39,27 +40,27 @@ class News {
     }
 
     /**
-     * Set subNews
+     * Set idTitle
      *
-     * @param string $subNews
+     * @param integer $idTitle
      *
      * @return News
      */
-    public function setSubNews($subNews)
+    public function setIdTitle($idTitle)
     {
-        $this->sub_news = $subNews;
+        $this->id_title = $idTitle;
 
         return $this;
     }
 
     /**
-     * Get subNews
+     * Get idTitle
      *
-     * @return string
+     * @return integer
      */
-    public function getSubNews()
+    public function getIdTitle()
     {
-        return $this->sub_news;
+        return $this->id_title;
     }
 
     /**
