@@ -1,0 +1,30 @@
+<?php
+
+namespace News\NewsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * News
+ *
+ * @ORM\Table(name="News")
+ * @ORM\Entity
+ */
+
+class News {
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    /**
+        *@ORM\Column(type="string", length=100)
+     */
+    private $sub_news;
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $text_news;
+
+}
