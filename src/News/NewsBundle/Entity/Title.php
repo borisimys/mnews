@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Title
  *
- * @ORM\Table(name="Title")
+ * @ORM\Table(name="title")
  * @ORM\Entity;
  */
 class Title {
@@ -25,6 +25,8 @@ class Title {
      * @ORM\Column(type="datetime")
      */
     private $updated;
+
+
 
     /**
      * Get id

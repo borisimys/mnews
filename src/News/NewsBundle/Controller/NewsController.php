@@ -7,7 +7,7 @@
     use News\NewsBundle\Entity\News;
     use Symfony\Component\HttpFoundation\Response;
 
-    class DefaultController extends Controller
+    class NewsController extends Controller
     {
         /**
          * @Route("/", name="/")
